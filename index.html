@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Shiwei HE</title>
+  
+  <meta name="author" content="Shiwei HE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Shiwei HE</name><name>「何世伟」</name>
+              </p>
+              <p>I am a graudate from <a href="https://english.cumtb.edu.cn/">China University of Mining & Technology-Beijing (CUMTB)</a>, major in Safety Engineering, and minor in Computer Science & Technology.
+              </p>
+              <p>
+                During college, I've worked on <a href="https://www.google.com/glass/start/">Disentanglement of feature vectors in generated human face<image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                  
+                </image></a>, advised by <a href="">Prof. Faguo Zhou</a>. I also use computer science to solve many engineering problems relate to production safety.
+              </p>
+              <br>
+              <p style="text-align:center">
+                <a href="mailto:shiweihe0713@163.com">Email</a> &nbsp/&nbsp
+                <a href="data/CV_ShiweiHE.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/ShiweiHE-bio.txt">Bio</a> &nbsp/&nbsp
+                <a href="https://space.bilibili.com/337084275/video">Bilibili</a> &nbsp/&nbsp
+                <a href="https://github.com/CalvinStarrio">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/ShiweiHE.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ShiweiHE_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Projects 🛠</heading>
+              <p>
+                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative projects are <span class="highlight">highlighted</span>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/Disentanglement.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/Disentanglement.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function zipnerf_start() {
+            document.getElementById('zipnerf_image').style.opacity = "1";
+          }
+
+          function zipnerf_stop() {
+            document.getElementById('zipnerf_image').style.opacity = "0";
+          }
+          zipnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://jonbarron.info/zipnerf">
+          <papertitle>Disentanglement of Human Facial Feature Vectors</papertitle>
+        </a>
+        <br>
+        <strong>Shiwei HE</strong>,
+        Yutong Gao, Guanghan Wang, Peiyu Xu
+        <br>
+        <font color="red"><em>CAMMIC</em>, 2021</font>
+        <br>
+        <a href="data/Publication.pdf">paper</a>
+        /
+        <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1903/1/012031">IOP</a>
+        <p></p>
+        <p>
+          Studied the shortcomings of using orthogonalization to solve the entanglement between feature vectors, analyzed the reasons that may lead to the entanglement of facial feature vectors, and proposed preliminary measures to solve the entanglement issue of using TL-GAN to generate human face images.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/Panorama.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/Panorama.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function db3d_start() {
+            document.getElementById('db3d_image').style.opacity = "1";
+          }
+
+          function db3d_stop() {
+            document.getElementById('db3d_image').style.opacity = "0";
+          }
+          db3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+				<a href="https://dreambooth3d.github.io/">
+          <papertitle>Panorama: Real-time Image Stitching</papertitle>
+        </a>
+        <br>
+        <strong>Shiwei HE</strong>,
+        Ruijie Lee, Junyi Yang, Xu Liang
+        <br>
+				<a href="https://dreambooth3d.github.io/">blog</a> / 
+        <a href="https://dreambooth3d.github.io/">github</a> / 
+				<a href="https://arxiv.org/abs/2303.13508">decided</a>
+        <p></p>
+        <p>The project stitched the images taken into a 360° Panorama, using <a href="https://blog.csdn.net/CalvinStarrio/article/details/129650800?spm=1001.2014.3001.5502">Harris Corners Detector</a> to extract feature key points (POI), then used OpenCV to form the panorama.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/DataVisualization.png' width="160">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+				<a href="https://dreambooth3d.github.io/">
+          <papertitle>Database Design and the Analysis of Hazardous Chemicals</papertitle>
+        </a>
+        <br>
+        <strong>Shiwei HE</strong>
+        <br>
+				<a href="https://dreambooth3d.github.io/">presentation</a> / 
+        <a href="https://dreambooth3d.github.io/">CAD</a> / 
+				<a href="https://arxiv.org/abs/2303.13508">undecided</a>
+        <br>Graduation design <font color="red">(oral)</font>
+        <p>Our team collceted data about 10 most common kinds of accident from <a href="https://www.baidu.com/link?url=d-cXYBwDv1b2Q6d1efXhizMT8Olzzi158F-EoyplZFP8pWNDmsdv23Hjr-4GZEdz&wd=&eqid=df57bcf100038d700000000664464bf6"></a>NRCC</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/UnderMine.png' width="160">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+				<a href="https://dreambooth3d.github.io/">
+          <papertitle>Unsafe Behavior Recognition in Coal Mining Environment</papertitle>
+        </a>
+        <br>
+        <strong>Shiwei HE</strong>
+        <br>
+				<a href="https://dreambooth3d.github.io/">presentation</a> / 
+        <a href="https://dreambooth3d.github.io/">CAD</a> / 
+				<a href="https://arxiv.org/abs/2303.13508">undecided</a>
+        <br>Graduation design <font color="red">(oral)</font>
+        <p>The project stitched the images taken into a 360° Panorama, using <a href="https://blog.csdn.net/CalvinStarrio/article/details/129650800?spm=1001.2014.3001.5502">Harris Corners Detector</a> to extract feature key points (POI), then used OpenCV to form the panorama.</p>
+      </td>
+    </tr>
+        </tbody>
+      </table>
+
+			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <heading>Publication 🎓</heading>
+          <p>
+          <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1903/1/012031">Disentanglement of Human Facial Features and the Inspection of Feature Extractor's Quality Based on TL-GAN</a>
+          <br>
+          <strong>Shiwei He</strong>, Yutong Gao, Guanghan Wang, Peiyu Xu (*equal contribution)
+          </p>
+          <p style="color: gray;">
+            Recent research on the Generated Adversarial Network models has made great progress in the task of generating images on human demand. Among them, Transparent Latentspace GAN tries to solve the problem by analyzing the latent space and finding the feature axes inside it. This model views the problem from a novel perspective, and it is easy to be carried out. However, more thorough and detailed experiments have shown that the original method on axes disentanglement of the model has certain drawbacks, which may lead to ethical problems, meaning that the model may pick up some pre-existing prejudice of racial or gender discrimination. This paper puts forward a new training mode aiming at reducing the bias existing in the generated images and simultaneously managing the disentanglement. Also, a more thorough examination of the model was conducted and it is found that the architecture of the model may be generalized to some universal functions. Among them, the quality evaluation of the feature extractor is the most practical and useful one. This finding, in turn, may be helpful for distinguishing a more accurate, effective, and robust feature extractor, thus improving the performance of the TL-GAN model in the first place.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>	
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Experience 💻</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td width="100%" valign="center">
+              <strong>Software Engineer</strong> (Hardware oriented)
+              <br>  
+              <a href="https://www.zillnk.com/">@ Zillnk Technology</a>
+              <br>
+              Intern,&nbsp  <time>July - Sept. 2022</time>
+              <br>
+              I was in charge of coding for the log management system of Remote Radio Unit, writing functions to capture physical parameters, and program preset terminal commands for customers like "get hardware description." At the end of the Hertz+ Project, my code is unpdated on <strong>1000</strong> RRUs.
+            </td>
+            <td align="center" style="padding:0px;width:25%;vertical-align:middle"><img src="images/Zillnk.png" alt="cs188"></td>
+          </tr>
+          <tr>
+            <td width="75%" valign="center">
+              <strong>Full-Stack Developer</strong>
+              <br>  
+              <a href="http://www.geovis.com.cn/">@ GeoVIS</a>
+              <br>
+              Intern, &nbsp <time>July - Sept. 2021 </time>
+              <br>
+              As the leader of 5 interns, I was in charge of programming to fetch data from target data source, and analyze them. Supporting the import option more than <strong>10</strong> common relational databases (MySQL, Oracle DB, etc.), our team turned clients' business stats into interactive graphs.
+
+            </td>
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <img src="images/GeoVIS.png" alt="cs188">
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding: 10px 20px;width:100%;vertical-align:middle">
+            <heading>Honors & Certificates ✅</heading>
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellpadding="20px"><tbody>
+          <tr>
+            <td width="75%" valign="center">
+              • <a href="http://www.lanqiaobei.cn/"> Lanqiao Cup Individual Competition Python Group</a> <font color="red"><strong>Third place</strong></font>   - May 31, 2021
+              <br><br>
+              • <a href="https://www.ceracu.org.cn/#/home"> National Software and IT Innovation Competition</a> <strong>Third prize</strong>   - June 14, 2022
+              <br><br>
+              • <a href="https://www.credly.com/badges/3bc571e2-97de-4b96-9e7b-77f1efe6d90b"> Data Science Practitioner - Certificate</a> @ IBM &nbsp Sept. 2021 - Feb. 2022
+              <br><br>
+              • <a href="images/Honors/PathAcademics.pdf"> Machine Learning and Data Science II</a> @ Path Academics &nbsp Sept. 2021 - Feb. 2022
+            </td>
+          </tr>
+        </tbody></table>
+
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+          <td style="padding: 10px 20px;width:100%;vertical-align:middle">
+            <heading>More about me 🌈</heading>
+            <br>
+            <br>Native in Mandarin, fluent in English, and I'm also learning Japanese~
+            <br>I am a huge fan of music, and I post my covers on <a href="https://www.youtube.com/channel/UCshbqyV1UXpHccQgpO1NM5Q">my YouTube channel </a>sometimes. 
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellpadding="20px"><tbody>
+          <tr>
+            <td width="75%" valign="center">
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding: 20px">
+              Updated on April 22, 2023
+            </td>
+            <td style="padding:0px" align="right">
+              Thanks <a href="https://jonbarron.info/">Jon Barron</a> for the amazing templates!
+            </td>
+            <br>
+          </tr>
+        </tbody></table>
+</body>
+
+</html>
