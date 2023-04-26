@@ -23,16 +23,16 @@
               <p>I am a graudate from <a href="https://english.cumtb.edu.cn/">China University of Mining & Technology-Beijing (CUMTB)</a>, major in Safety Engineering, and minor in Computer Science & Technology.
               </p>
               <p>
-                During college, I've worked on <a href="https://www.google.com/glass/start/">Disentanglement of feature vectors in generated human face<image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                During college, I've worked on <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1903/1/012031">Disentanglement of feature vectors in generated human face<image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
                   
-                </image></a>, advised by <a href="">Prof. Faguo Zhou</a>. I also use computer science to solve many engineering problems relate to production safety.
+                </image></a>, advised by <a href="https://jdxy.cumtb.edu.cn/info/1013/1377.htm">Prof. Faguo Zhou</a>. I also use computer science to solve many engineering problems relate to production safety.
               </p>
               <br>
               <p style="text-align:center">
                 <a href="mailto:shiweihe0713@163.com">Email</a> &nbsp/&nbsp
                 <a href="data/CV_ShiweiHE.pdf">CV</a> &nbsp/&nbsp
                 <a href="data/ShiweiHE-bio.txt">Bio</a> &nbsp/&nbsp
-                <a href="https://space.bilibili.com/337084275/video">Bilibili</a> &nbsp/&nbsp
+                <a href="https://space.bilibili.com/337084275/video">Bilibili</a>
 <!--                 <a href="https://github.com/CalvinStarrio">Github</a> -->
               </p>
             </td>
@@ -46,7 +46,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Projects 🛠</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative projects are <span class="highlight">highlighted</span>.
+                I'm interested in computer vision, machine learning, and image processing. Much of my research is about implementing computer vision in different engineering scenarios. My representative projects are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -74,7 +74,7 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="http://jonbarron.info/zipnerf">
+        <a href="">
           <papertitle>Disentanglement of Human Facial Feature Vectors</papertitle>
         </a>
         <br>
@@ -83,7 +83,7 @@
         <br>
         <font color="red"><em>CAMMIC</em>, 2021</font>
         <br>
-        <a href="data/Publication.pdf">paper</a>
+        <a href="data/Publication.pdf">Paper</a>
         /
         <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1903/1/012031">IOP</a>
         <p></p>
@@ -93,37 +93,47 @@
       </td>
     </tr>
 
-    <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+    <tr onmouseout="pre_stitching()" onmouseover="post_stitching()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/Panorama.png" type="video/mp4">
+          <div class="two" id='panorama'><video id='panorama_clip' width=100% height=100% muted autoplay loop>
+          <source src="images/Panorama.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
           <img src='images/Panorama.png' width="160">
         </div>
+        <!-- <div class="one">
+          <div class="two" id='panorama2'>
+          <img style="width:100%;max-width:100%" src="images/Panorama2.png" width="160">
+          </div>
+          <div class="two" id='panorama'>
+          <img src='images/Panorama.png' width="160">
+        </div>
+        </div> -->
         <script type="text/javascript">
-          function db3d_start() {
-            document.getElementById('db3d_image').style.opacity = "1";
+          function pre_stitching() {
+            document.getElementById('panorama').style.opacity = "0";
           }
 
-          function db3d_stop() {
-            document.getElementById('db3d_image').style.opacity = "0";
+          function post_stitching() {
+            document.getElementById('panorama').style.opacity = "1";
+            var curVid = document.getElementById('panorama_clip');
+            curVid.pause();
+            curVid.currentTime = '0';
+            curVid.play();
           }
-          db3d_stop()
+          pre_stitching()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-				<a href="https://dreambooth3d.github.io/">
-          <papertitle>Panorama: Real-time Image Stitching</papertitle>
-        </a>
+          <papertitle style="color: #1772d0">Panorama: Real-time Image Stitching</papertitle>
         <br>
         <strong>Shiwei HE</strong>,
         Ruijie Lee, Junyi Yang, Xu Liang
         <br>
-				<a href="https://dreambooth3d.github.io/">blog</a> / 
+				<!-- <a href="https://dreambooth3d.github.io/">blog</a> / 
         <a href="https://dreambooth3d.github.io/">github</a> / 
-				<a href="https://arxiv.org/abs/2303.13508">decided</a>
+				<a href="https://arxiv.org/abs/2303.13508">decided</a> -->
         <p></p>
         <p>The project stitched the images taken into a 360° Panorama, using <a href="https://blog.csdn.net/CalvinStarrio/article/details/129650800?spm=1001.2014.3001.5502">Harris Corners Detector</a> to extract feature key points (POI), then used OpenCV to form the panorama.</p>
       </td>
@@ -135,17 +145,14 @@
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-				<a href="https://dreambooth3d.github.io/">
-          <papertitle>Database Design and the Analysis of Hazardous Chemicals</papertitle>
-        </a>
+        <papertitle style="color: #1772d0">Database Design and the An  alysis of Hazardous Chemicals Statistics</papertitle>
         <br>
-        <strong>Shiwei HE</strong>
+        <strong>Shiwei HE</strong>, Leo Hu, Pakho Lee (*course project)
         <br>
-				<a href="https://dreambooth3d.github.io/">presentation</a> / 
-        <a href="https://dreambooth3d.github.io/">CAD</a> / 
-				<a href="https://arxiv.org/abs/2303.13508">undecided</a>
-        <br>Graduation design <font color="red">(oral)</font>
-        <p>Our team collceted data about 10 most common kinds of accident from <a href="https://www.baidu.com/link?url=d-cXYBwDv1b2Q6d1efXhizMT8Olzzi158F-EoyplZFP8pWNDmsdv23Hjr-4GZEdz&wd=&eqid=df57bcf100038d700000000664464bf6"></a>NRCC</p>
+				<a href="/my_website/data/Database_report.pdf">Report</a> /
+        <a href="/my_website/data/Database_presentation.pdf">DataVisualization</a>
+        <br>
+        <p>Our team collceted data about 10 most common kinds of accident from <a href="https://www.baidu.com/link?url=d-cXYBwDv1b2Q6d1efXhizMT8Olzzi158F-EoyplZFP8pWNDmsdv23Hjr-4GZEdz&wd=&eqid=df57bcf100038d700000000664464bf6">NRCC</a>, forming a relatively complete database, and visualize the data and analyze the development trend of accidents caused by the hazardous chemicals.</p>
       </td>
     </tr>
     <tr>
@@ -155,17 +162,29 @@
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-				<a href="https://dreambooth3d.github.io/">
-          <papertitle>Unsafe Behavior Recognition in Coal Mining Environment</papertitle>
-        </a>
+        <papertitle style="color: #1772d0">Unsafe Behavior Recognition in Coal Mining Environment</papertitle>
         <br>
         <strong>Shiwei HE</strong>
         <br>
-				<a href="https://dreambooth3d.github.io/">presentation</a> / 
-        <a href="https://dreambooth3d.github.io/">CAD</a> / 
-				<a href="https://arxiv.org/abs/2303.13508">undecided</a>
-        <br>Graduation design <font color="red">(oral)</font>
-        <p>The project stitched the images taken into a 360° Panorama, using <a href="https://blog.csdn.net/CalvinStarrio/article/details/129650800?spm=1001.2014.3001.5502">Harris Corners Detector</a> to extract feature key points (POI), then used OpenCV to form the panorama.</p>
+				<a href="/my_website/images/unsafe_recognition.pdf">Presentation</a> (p.25-p.37)
+        <br>Graduation Design - Theme 2 <font color="red">(oral)</font>
+        <p>The trained model successfully detect whether workers in workspace wearing a hard hart, and capable of recognizing 3 most common unsafe behaviors in workspace (such smoking, using phone, falling down.)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/app_building.gif' width="160">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <papertitle style="color: #1772d0">Wechat App Building: Dormitory Entry Permission Granting Applet</papertitle>
+        <br>
+        <strong>Shiwei HE</strong>
+        <br>
+				<a href="https://drive.google.com/drive/folders/1LaSF_I8d23fCDZwJyA_yx_48tiK4mAFz?usp=sharing">Code</a> (*gig for fun)
+
+        <p>The app ran smoothly on the platform of Wechat, helping the dormitory manager to gain feedback on students' entry into the building during the pandemic. The proejct includes web design like JavaScript and CSS, deploying the server and configure the domain name of the CentOS system image and network to connect with the databases.</p>
       </td>
     </tr>
         </tbody>
