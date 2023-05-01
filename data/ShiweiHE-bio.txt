@@ -1,0 +1,6 @@
+I graduated from China University of Mining and Technology in Beijing, 
+majoring in safety engineering and minoring in computer science, 
+and will go to the United States this year to continue my CS master's studies. 
+My main research interests are computer vision and deep learning, 
+and I have been a teaching assistant in the PA program in artificial intelligence 
+and computer vision taught by Rabih Younes at Duke University.
